@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "definitions.schema.json",
-    "title": "Definitions",
+    "title": "Definitions in 3DTILES_metadata",
     "description": "Common definitions used in schema files.",
     "definitions": {
         "numericValue": {
