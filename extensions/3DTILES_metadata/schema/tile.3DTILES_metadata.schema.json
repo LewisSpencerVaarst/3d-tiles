@@ -9,7 +9,7 @@
 			"type": "array",
 			"description": "A collection of metadata entities.",
 			"items": {
-				"type": "metadataEntity.schema.json"
+				"$ref": "metadataEntity.schema.json"
 			},
 			"minItems": 1
 		}
