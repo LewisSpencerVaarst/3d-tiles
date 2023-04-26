@@ -7,14 +7,11 @@
 	"properties": {
 		"entities": {
 			"type": "array",
-			"items": {
-				"type": "object"
-			},
-			"minItems": 1,
 			"description": "A collection of metadata entities.",
-			"additionalProperties": {
-				"$ref": "metadataEntity.schema.json"
-			}
+			"items": {
+				"type": "metadataEntity.schema.json"
+			},
+			"minItems": 1
 		}
 	},
 	"required": [
