@@ -2,6 +2,19 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "tile.3DTILES_metadata.schema.json",
     "title": "3DTILES_metadata tile extension",
-    "$ref": "metadataEntityCollection.schema.json",
-    "description": "An object containing metadata about a tile. This extension shall not be added to tiles using the `3DTILES_implicit_tiling` extension since tile metadata is provided separately in the subtrees."
+	"$ref": "rootProperty.schema.json",
+    "description": "An object containing a collection of metadata entities about a tile. This extension shall not be added to tiles using the `3DTILES_implicit_tiling` extension since tile metadata is provided separately in the subtrees."
+	"properties": {
+		"entities": {
+			"type": "array",
+			"description": "A collection of metadata entities.",
+			"items": {
+				"type": "metadataEntity.schema.json"
+			},
+			"minItems": 1
+		}
+	},
+	"required": [
+		"entities"
+	]
 }
