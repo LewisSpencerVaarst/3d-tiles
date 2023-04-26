@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "metadataEntityCollection.schema.json",
-	"title": "Metadata Entity in 3DTILES_metadata",
+	"title": "Metadata Entity Collection in 3DTILES_metadata",
 	"$ref": "rootProperty.schema.json",
 	"description": "An object containing a collection of metadata entities.",
 	"properties": {
